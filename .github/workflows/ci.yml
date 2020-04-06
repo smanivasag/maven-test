@@ -24,6 +24,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Publish to GitHub Packages Apache Maven
-        run: mvn deploy -Dregistry=https://maven.pkg.github.com/smanivasag -Dtoken=$GH_TOKEN
-        # env:
-        #   GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
+        run: mvn deploy
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
