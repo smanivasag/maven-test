@@ -3,4 +3,17 @@
   <groupId>uk.co.test</groupId>
   <artifactId>maven-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub smanivasag Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/smanivasag/maven-test</url>
+    </repository>
+    <snapshotRepository>
+      <id>github</id>
+      <name>GitHub smanivasag Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/smanivasag/maven-test</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
